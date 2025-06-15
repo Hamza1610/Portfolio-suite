@@ -30,7 +30,7 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: ['http://192.168.160.1:8080','http://localhost:8080', 'http://localhost:5173', 'http://localhost:3000', 'https://portfolio-suite.onrender.com/'],
+  origin: ['http://192.168.160.1:8080','http://localhost:8080', 'http://localhost:5173', 'http://localhost:3000', 'https://portfolio-suite.onrender.com'],
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization'],
   credentials: true
