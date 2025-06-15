@@ -1,0 +1,5 @@
+/node_modules
+/uploads
+.env
+dist
+client_secret_246261908329-f1dq0s44kfv13ta4dld30lfj6e79jsh9.apps.googleusercontent.com.json
