@@ -23,6 +23,9 @@ import authRoutes from './routes/auth';
 // Load environment variables
 dotenv.config();
 
+// Debug environment variables
+console.log('FRONTEND_URL:', process.env.FRONTEND_URL);
+
 // Connect to MongoDB
 connectDB();
 
@@ -30,10 +33,30 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: process.env.FRONTEND_URL || 'http://localhost:3000',
-  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-  allowedHeaders: ['Content-Type', 'Authorization'],
-  credentials: true
+  origin: function(origin, callback) {
+    const allowedOrigins = [
+      process.env.FRONTEND_URL,
+      'http://localhost:3000',
+      'https://portfolio-suite.onrender.com' // Add your production frontend URL here
+    ];
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS', 'PATCH'],
+  allowedHeaders: [
+    'Content-Type',
+    'Authorization',
+    'X-Requested-With',
+    'Accept',
+    'Origin',
+    'Access-Control-Allow-Origin',
+    'Access-Control-Allow-Headers'
+  ],
+  credentials: true,
+  maxAge: 86400 // 24 hours
 }));
 app.use(helmet());
 app.use(express.json());
