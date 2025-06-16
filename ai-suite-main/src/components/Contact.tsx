@@ -34,33 +34,6 @@ const Contact = () => {
     });
   };
 
-  const contactInfo = [
-    {
-      icon: "📧",
-      label: "Email",
-      value: "alex.chen@devnest.com",
-      link: "mailto:alex.chen@devnest.com"
-    },
-    {
-      icon: "💼",
-      label: "LinkedIn",
-      value: "linkedin.com/in/alexchen",
-      link: "https://linkedin.com/in/alexchen"
-    },
-    {
-      icon: "🐙",
-      label: "GitHub",
-      value: "github.com/alexchen",
-      link: "https://github.com/alexchen"
-    },
-    {
-      icon: "🐦",
-      label: "Twitter",
-      value: "@alexchen_dev",
-      link: "https://twitter.com/alexchen_dev"
-    }
-  ];
-
   return (
     <section id="contact" className="py-20">
       <div className="container mx-auto px-4">
