@@ -1,7 +1,7 @@
 {
-  "name": "devnest-ai-suite-backend",
+  "name": "ai-suite-backend",
   "version": "1.0.0",
-  "description": "Backend for DevNest AI Suite",
+  "description": "Backend for MySuite AI Suite",
   "main": "dist/index.js",
   "scripts": {
     "start": "node dist/index.js",
