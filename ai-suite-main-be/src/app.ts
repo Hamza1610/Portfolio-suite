@@ -37,6 +37,7 @@ app.use(cors({
     const allowedOrigins = [
       process.env.FRONTEND_URL,
       'http://localhost:3000',
+      'http://localhost:8080',
       'https://portfolio-suite.onrender.com' // Add your production frontend URL here
     ];
     if (!origin || allowedOrigins.includes(origin)) {
