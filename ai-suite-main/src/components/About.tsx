@@ -34,10 +34,9 @@ const About = () => {
               <div>
                 <h3 className="text-xl font-semibold mb-2">Background</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  I am a passionate Full Stack Developer with expertise in modern web technologies. 
-                  With a strong foundation in both frontend and backend development, I create 
-                  scalable and user-friendly applications. My journey in tech has equipped me 
-                  with the skills to tackle complex problems and deliver efficient solutions.
+                  I am a results-driven AI and Full Stack Engineer passionate about building intelligent systems that merge innovation with functionality.
+My work bridges the gap between software engineering excellence and artificial intelligence innovation, enabling the creation of applications that think, learn, and scale.
+From architecting robust backend systems to deploying AI-driven models that enhance user experience and automation, I thrive at the intersection of data, design, and technology, turning complex ideas into seamless digital solutions.
                 </p>
               </div>
 
