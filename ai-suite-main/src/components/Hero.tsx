@@ -14,11 +14,10 @@ const Hero = () => {
             Muhammad Hamza
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8">
-            Full Stack Developer
+            AI Engineer | Software Engineer (Cloud & Agentic Systems)
           </p>
           <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto">
-            Passionate about creating beautiful and functional web applications. 
-            Specializing in modern JavaScript frameworks and cloud technologies.
+            Passionate about building intelligent, scalable systems that connect AI reasoning with real-world applications. Specializing in agentic AI development, cloud architecture, and modern software engineering.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <Button size="lg" onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}>
